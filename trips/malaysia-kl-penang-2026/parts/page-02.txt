@@ -1,0 +1,233 @@
+tter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:5px}
+.budget-reference strong{display:block;font-family:"Songti SC","STSong",serif;font-size:28px;color:var(--deep);white-space:nowrap}
+.budget-reference p{margin:0;color:var(--muted);font-size:13px}
+@media(max-width:760px){.budget-reference{grid-template-columns:1fr;gap:10px}.budget-reference strong{font-size:24px;white-space:normal}}
+@media print{.budget-reference{box-shadow:none;border:1px solid #ccc;border-left:4px solid var(--gold)}}
+
+/* GitHub Pages mobile enhancement */
+button, input { touch-action: manipulation; }
+@media(max-width:720px){
+  #budget-calculator .calc-scroll{overflow:visible}
+  #budget-calculator .budget-editor{display:block;min-width:0;width:100%;background:transparent}
+  #budget-calculator .budget-editor thead{display:none}
+  #budget-calculator .budget-editor tbody{display:block}
+  #budget-calculator .budget-editor tr.group-row{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    margin:18px 14px 8px;padding:12px 14px;border-radius:8px;background:#eaf1ec
+  }
+  #budget-calculator .budget-editor tr.group-row td{
+    display:block!important;padding:0;border:0;background:transparent
+  }
+  #budget-calculator .budget-editor tr.group-row td:first-child{flex:1}
+  #budget-calculator .budget-editor tr.group-row td[colspan]{display:block}
+  #budget-calculator .budget-editor tr.group-row td:not(:first-child):not(.group-total){display:none!important}
+  #budget-calculator .budget-editor tr[data-group]{
+    display:grid;grid-template-columns:1fr 1fr;gap:12px;
+    margin:0 14px 14px;padding:16px;border:1px solid #dde5df;border-radius:10px;
+    background:#fff;box-shadow:0 5px 18px rgba(17,45,41,.06)
+  }
+  #budget-calculator .budget-editor tr[data-group] td{
+    display:block;padding:0;border:0;min-width:0
+  }
+  #budget-calculator .budget-editor tr[data-group] td::before{
+    content:attr(data-label);display:block;margin-bottom:4px;color:#73807b;
+    font-size:10px;letter-spacing:.06em
+  }
+  #budget-calculator .budget-editor tr[data-group] td:nth-child(1),
+  #budget-calculator .budget-editor tr[data-group] td:nth-child(2),
+  #budget-calculator .budget-editor tr[data-group] td:nth-child(7){grid-column:1/-1}
+  #budget-calculator .budget-editor tr[data-group] td:nth-child(1){
+    font-size:16px;border-bottom:1px solid #edf1ee;padding-bottom:8px
+  }
+  #budget-calculator .budget-input,#budget-calculator .budget-note{
+    min-width:0;width:100%;height:44px;font-size:16px
+  }
+  #budget-calculator .unit{height:44px;display:flex!important;align-items:center;
+    border:1px solid #cfd8d2!important;border-radius:6px!important;padding:0 10px!important}
+  #budget-calculator .row-total{
+    height:44px;display:flex!important;align-items:center;justify-content:flex-end;
+    padding:0 10px!important;background:#f3f7f4;border-radius:6px;color:#103b36;font-size:16px
+  }
+  #budget-calculator .calc-tools{width:100%;display:grid;grid-template-columns:1fr 1fr}
+  #budget-calculator .calc-btn{min-height:44px}
+  #budget-calculator .calc-btn.primary{grid-column:1/-1}
+}
+</style>
+<meta content="2026年吉隆坡与槟城一家三口6天5晚旅行行程，含逐日安排、景点图文、航班衔接及可编辑预算测算。" name="description"/><meta content="南洋双城家庭私享之旅｜吉隆坡 × 槟城" property="og:title"/><meta content="一家三口6天5晚行程：逐日安排、核心景点、航班衔接与可编辑预算。" property="og:description"/><meta content="website" property="og:type"/></head>
+<body id="top">
+<header class="topbar">
+<div class="wrap inner">
+<div class="brand">SOUTHERN LIGHTS · PRIVATE JOURNEY</div>
+<nav class="nav">
+<a href="#overview">行程概览</a><a href="#flights">航班</a><a href="#days">逐日安排</a>
+<a href="#places">目的地</a><a href="#cost">费用</a><a href="#notes">预订提示</a>
+</nav>
+<button class="print-btn" onclick="window.print()">打印 / 保存 PDF</button>
+</div>
+</header>
+<section class="hero">
+<div class="wrap hero-content">
+<div class="eyebrow">KUALA LUMPUR × PENANG</div>
+<h1>南洋双城<br/>家庭私享之旅</h1>
+<p class="hero-sub">从吉隆坡的现代天际线，到乔治市层叠交织的海峡文化：为一家三口设计的城市、人文与美食之旅。</p>
+<div class="hero-meta">
+<span class="pill">2026.07.26—07.31</span>
+<span class="pill">一家三口</span>
+<span class="pill">6天5晚</span>
+<span class="pill">吉隆坡2晚 · 槟城3晚</span>
+</div>
+<div class="hero-note">本手册为方案一的规划版。航班时刻、票价、酒店及包车价格均须在出票或下单前再次确认。</div>
+</div>
+</section>
+<main>
+<section class="section" id="overview">
+<div class="wrap">
+<div class="stats">
+<div class="stat"><b>2</b><span>座城市</span></div>
+<div class="stat"><b>5</b><span>个酒店夜晚</span></div>
+<div class="stat"><b>3</b><span>段主要航程</span></div>
+<div class="stat"><b>¥3.1–3.4万</b><span>建议家庭预算</span></div>
+</div>
+<div class="section-head" style="margin-top:72px">
+<div><div class="kicker">Trip Narrative</div><h2>一条清晰、不过度赶路的双城线</h2></div>
+<p class="section-intro">吉隆坡承担现代都市、国家历史与多元宗教；槟城承担港口城市、华人移民、娘惹文化与慢节奏街区体验。行程不加入马六甲，避免在有限时间内反复横向移动。</p>
+</div>
+<div class="highlights">
+<div class="highlight"><div class="num">01 / CITY</div><h3>首日从容启动</h3><p>凌晨抵达后推迟出发，用一条紧凑但不疲惫的历史城区线路进入吉隆坡。</p></div>
+<div class="highlight"><div class="num">02 / HERITAGE</div><h3>槟城保留三晚</h3><p>乔治市不做“一日打卡”，完整覆盖街区、宗祠、娘惹文化、升旗山与海边日落。</p></div>
+<div class="highlight"><div class="num">03 / LOGISTICS</div><h3>关键段包车</h3><p>机场接送、吉隆坡市区及槟城核心日采用5座车，降低一家三口的换乘和行李压力。</p></div>
+</div>
+</div>
+</section>
+<section class="section white" id="flights">
+<div class="wrap">
+<div class="section-head">
+<div><div class="kicker">Air Plan</div><h2>航班与城市衔接</h2></div>
+<p class="section-intro">去程从北京大兴出发；回程经曼谷中转抵达北京首都机场。页面已补充每段航程时长；槟城—曼谷—北京必须优先购买同一票号联程票，并确认行李直挂。</p>
+</div>
+<div class="route-card">
+<div class="route">
+<div class="city"><div class="dot"></div><b>北京大兴</b><small>PKX · 7/26</small></div>
+<div class="city"><div class="dot"></div><b>吉隆坡</b><small>KUL · 2晚</small></div>
+<div class="city"><div class="dot"></div><b>槟城</b><small>PEN · 3晚</small></div>
+<div class="city"><div class="dot"></div><b>曼谷</b><small>BKK · 中转</small></div>
+<div class="city"><div class="dot"></div><b>北京首都</b><small>PEK · 7/31</small></div>
+</div>
+</div>
+<div style="height:24px"></div>
+<table class="flight-table">
+<thead><tr><th>日期</th><th>航段</th><th>参考航班 / 时间</th><th>飞行时长</th><th>规划说明</th></tr></thead>
+<tbody>
+<tr><td>7月26日</td><td><b>北京大兴 → 吉隆坡</b></td><td>MU795｜18:30—00:25+1</td><td>5小时55分</td><td><span class="tag">用户已选</span> 抵达后专车送酒店</td></tr>
+<tr><td>7月28日</td><td><b>吉隆坡 → 槟城</b></td><td>参考 11:50—12:50 直飞</td><td>约1小时</td><td><span class="tag">待锁定</span> 优先KUL T1出发、含行李</td></tr>
+<tr><td>7月31日</td><td><b>槟城 → 曼谷</b></td><td>TG426｜08:05—08:55</td><td>约1小时50分</td><td rowspan="2"><span class="tag">联程优先</span> 曼谷约1小时05分中转；不得自行拆票<br/><span style="font-size:12px;color:#67726f">全程约7小时40分（含中转）</span></td></tr>
+<tr><td>7月31日</td><td><b>曼谷 → 北京首都</b></td><td>TG614｜10:00—15:45</td><td>约4小时45分</td></tr>
+</tbody>
+</table>
+<div class="warning"><b>注意：</b>北京出发机场为大兴 PKX，回程到达机场为首都 PEK；返程中转时间较紧，仅在同航司联程、行李直挂条件下采用。</div>
+</div>
+</section>
+<section class="section" id="days">
+<div class="wrap">
+<div class="section-head">
+<div><div class="kicker">Daily Itinerary</div><h2>六天五晚逐日安排</h2></div>
+<p class="section-intro">节奏设计遵循三个原则：凌晨抵达后不早起硬撑；槟城主价值放在乔治市与海峡文化；最后一晚提前收束，确保清晨航班。</p>
+</div>
+<div class="timeline">
+<article class="day">
+<div class="day-side"><div><div class="date">SUN · 07.26</div><div class="dnum">01</div></div><div class="city-name">北京 → 吉隆坡</div></div>
+<div class="day-main">
+<div><h3>启程：夜航进入南洋</h3><p>下午前往北京大兴机场，乘直飞航班前往吉隆坡。次日凌晨抵达，不安排任何观光。</p>
+<ul class="schedule"><li><time>15:30</time><span>建议抵达北京大兴机场</span></li><li><time>18:30</time><span>MU795 起飞｜飞行约5小时55分</span></li><li><time>00:25</time><span>抵达KUL T1，办理入境与取行李</span></li><li><time>约02:00</time><span>专车抵达市区酒店并休息</span></li></ul>
+</div><img alt="双子塔精选夜景" class="day-photo" src="__IMG_02__"/>
+</div>
+</article>
+<article class="day">
+<div class="day-side"><div><div class="date">MON · 07.27</div><div class="dnum">02</div></div><div class="city-name">吉隆坡</div></div>
+<div class="day-main">
+<div><h3>城市原点与现代天际线</h3><p>上午晚些出发，用步行友好的历史城区串联独立广场、占美清真寺、中央艺术坊与茨厂街；傍晚转向KLCC。</p>
+<ul class="schedule"><li><time>10:30</time><span>包车出发：独立广场、苏丹阿都沙末大厦</span></li><li><time>12:00</time><span>占美清真寺、中央艺术坊、茨厂街午餐</span></li><li><time>15:00</time><span>酒店休息；或选伊斯兰艺术博物馆</span></li><li><time>17:30</time><span>KLCC公园、双子塔、Pavilion / TRX晚餐</span></li></ul>
+</div><img alt="占美清真寺全景" class="day-photo" src="__IMG_03__"/>
+</div>
+</article>
+<article class="day">
+<div class="day-side"><div><div class="date">TUE · 07.28</div><div class="dnum">03</div></div><div class="city-name">吉隆坡 → 槟城</div></div>
+<div class="day-main">
+<div><h3>飞抵乔治市：街区、宗祠与海上聚落</h3><p>午前飞往槟城。接机后直接进入乔治市核心区，把当日体力集中用于街巷与建筑，而不是奔波远郊。</p>
+<ul class="schedule"><li><time>08:30</time><span>早餐、退房，专车送KUL</span></li><li><time>11:50</time><span>参考航班起飞｜飞行约1小时，约12:50抵达槟城</span></li><li><time>14:30</time><span>Armenian Street、壁画、邱公司</span></li><li><time>17:00</time><span>姓氏桥；晚上汕头街或Chulia Street</span></li></ul>
+</div><img alt="乔治市壁画" class="day-photo" src="__IMG_04__"/>
+</div>
+</article>
+<article class="day">
+<div class="day-side"><div><div class="date">WED · 07.29</div><div class="dnum">04</div></div><div class="city-name">槟城</div></div>
+<div class="day-main">
+<div><h3>山城视野与娘惹文化</h3><p>上午避开高温和人流前往升旗山；下山后游览极乐寺，下午回到乔治市进入娘惹宅邸与港口城市历史。</p>
+<ul class="schedule"><li><time>07:45</time><span>包车前往升旗山，缆车登顶</span></li><li><time>10:45</time><span>极乐寺，随后午餐</span></li><li><time>14:00</time><span>槟城侨生博物馆 / 娘惹博物馆</span></li><li><time>17:00</time><span>乔治市慢逛、咖啡馆与晚餐</span></li></ul>
+</div><img alt="极乐寺建筑群全景" class="day-photo" src="__IMG_05__"/>
+</div>
+</article>
+<article class="day">
+<div class="day-side"><div><div class="date">THU · 07.30</div><div class="dnum">05</div></div><div class="city-name">槟城</div></div>
+<div class="day-main">
+<div><h3>留白的一天：蓝屋、海边与日落</h3><p>最后一个完整游玩日不再堆叠景点。上午安排蓝屋导览，下午可按天气在Gurney、酒店休息或Batu Ferringhi之间选择。</p>
+<ul class="schedule"><li><time>10:30</time><span>乔治市早午餐与街区补拍</span></li><li><time>11:00</time><span>蓝屋导览（以最终预约场次为准）</span></li><li><time>14:00</time><span>Gurney商圈 / 酒店休息 / 伴手礼</span></li><li><time>17:00</time><span>可选Batu Ferringhi海边日落；21:30前回酒店</span></li></ul>
+</div><img alt="Batu Ferringhi海边日落" class="day-photo" src="__IMG_06__"/>
+</div>
+</article>
+<article class="day">
+<div class="day-side"><div><div class="date">FRI · 07.31</div><div class="dnum">06</div></div><div class="city-name">槟城 → 北京</div></div>
+<div class="day-main">
+<div><h3>清晨返程：曼谷联程回京</h3><p>酒店安排打包早餐或提前准备简餐。清晨专车前往槟城机场，经曼谷转机，当日下午抵达北京首都机场。</p>
+<ul class="schedule"><li><time>05:20</time><span>酒店出发前往PEN</span></li><li><time>08:05</time><span>TG426 槟城起飞｜飞行约1小时50分</span></li><li><time>10:00</time><span>TG614 曼谷起飞｜飞行约4小时45分</span></li><li><time>15:45</time><span>抵达北京首都机场 PEK</span></li></ul>
+</div><img alt="槟城姓氏桥" class="day-photo" src="__IMG_07__"/>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section white" id="places">
+<div class="wrap">
+<div class="section-head">
+<div><div class="kicker">Destination Edit</div><h2>本次真正值得看的地方</h2></div>
+<p class="section-intro">不追求“景点数量最大化”，而是选择能够解释两座城市性格的地点：国家历史、宗教多元、港口贸易、移民社群与生活方式。</p>
+</div>
+<div class="place-grid">
+<article class="place"><img alt="独立广场" src="__IMG_08__"/><div class="place-copy"><div class="place-city">Kuala Lumpur</div><h3>独立广场</h3><p>吉隆坡的历史坐标。草坪、殖民时期建筑与苏丹阿都沙末大厦共同构成马来西亚国家叙事最直观的城市界面。</p></div></article>
+<article class="place"><img alt="占美清真寺全景" src="__IMG_03__"/><div class="place-copy"><div class="place-city">Kuala Lumpur</div><h3>占美清真寺</h3><p>吉隆坡历史城区最具辨识度的宗教建筑之一。全景视角能同时看到穹顶、拱廊、塔楼与开放庭院，更完整地呈现其摩尔式建筑语言。</p></div></article>
+<article class="place"><img alt="双子塔精选夜景" src="__IMG_02__"/><div class="place-copy"><div class="place-city">Kuala Lumpur</div><h3>双子塔与KLCC</h3><p>现代吉隆坡的标志性天际线。傍晚从公园到商场的动线完整，兼顾拍照、休息、餐饮和亲子友好度。</p></div></article>
+<article class="place"><img alt="乔治市壁画" src="__IMG_04__"/><div class="place-copy"><div class="place-city">George Town</div><h3>乔治市街区</h3><p>骑楼、宗教建筑、街头艺术和咖啡馆层层叠加。这里的价值不在单一壁画，而在步行中阅读多元社群的城市肌理。</p></div></article>
+<article class="place"><img alt="邱公司建筑正立面" src="__IMG_09__"/><div class="place-copy"><div class="place-city">George Town</div><h3>邱公司</h3><p>华人宗族组织、建筑装饰与移民网络的集中体现，是理解槟城华人社会结构比“打卡壁画”更重要的一站。</p></div></article>
+<article class="place"><img alt="姓氏桥" src="__IMG_07__"/><div class="place-copy"><div class="place-city">George Town</div><h3>姓氏桥</h3><p>木屋沿栈桥延伸至海面，保留水上聚落与宗族社区痕迹。建议傍晚前往，避开正午曝晒与旅行团高峰。</p></div></article>
+<article class="place"><img alt="升旗山" src="__IMG_10__"/><div class="place-copy"><div class="place-city">Penang</div><h3>升旗山</h3><p>从高处理解槟岛地形、城市密度与海峡位置。早晨前往既有更舒适的温度，也能为极乐寺留出顺路动线。</p></div></article>
+<article class="place"><img alt="极乐寺建筑群全景" src="__IMG_05__"/><div class="place-copy"><div class="place-city">Penang</div><h3>极乐寺</h3><p>大型山地佛教建筑群，融合汉传、泰式与缅式建筑语言。全景图能够完整呈现依山展开的殿宇、塔楼、庭院与层叠空间。</p></div></article>
+<article class="place"><img alt="槟城侨生博物馆正立面" src="__IMG_11__"/><div class="place-copy"><div class="place-city">George Town</div><h3>侨生博物馆</h3><p>通过家具、服饰、生活器物与宅邸空间理解娘惹文化，不仅“好看”，也补足华人移民与本地文化融合的叙事。</p></div></article>
+</div>
+</div>
+</section>
+<section class="section deep" id="cost">
+<div class="wrap">
+<div class="section-head">
+<div><div class="kicker">Budget Architecture</div><h2>费用清单与预算边界</h2></div>
+<p class="section-intro">以下测算器用于手动录入实际机票、酒店、包车、餐饮、门票及购物费用，并自动生成航段小计、城市小计和家庭总计。</p>
+</div><div class="budget-reference">
+<div>
+<span class="budget-reference-label">当前参考预算</span>
+<strong>一家三口约 ¥31,000–34,000</strong>
+</div>
+<p>该区间仅作为首轮规划基准。实际预算以你在下方测算器中录入的携程机票、酒店和包车成交价为准。</p>
+</div><div class="calc-shell" id="budget-calculator">
+<div class="calc-head">
+<div><h3>可编辑预算测算器</h3><p>填写“数量 × 单价”，系统自动生成分项小计、城市小计与家庭总计。金额单位：人民币元。</p></div>
+<div class="calc-tools">
+<button class="calc-btn primary" onclick="loadSuggestedBudget()" type="button">载入建议值</button>
+<button class="calc-btn" onclick="clearBudget()" type="button">清空金额</button>
+<button class="calc-btn" onclick="copyBudgetSummary()" type="button">复制汇总</button>
+</div>
+</div>
+<div class="calc-scroll">
+<table class="budget-editor">
+<thead><tr><th style="width:19%">城市 / 航段</th><th style="width:17%">费用项目</th><th style="width:10%">数量</th><th style="width:8%">单位</th><th style="width:13%">单价</th><th style="width:13%">小计</th><th style="width:20%">备注</th></tr></thead>
+<tbody>
+<tr class="group-row"><td colspan="5">机票｜按航段</td><td class="group-total" id="subtotal-flights">¥0</td><td></td></tr>
+<tr data-group="flights" data-key="flight-bjs-kul"><td data-label="城市 / 航段">北京 → 吉隆坡</td><td data-label="费用项目">国际机票</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="3"/></td><td class="unit" data-label="单位">人</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="3300"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="含税及基础行李预留"/></td></tr>
+<tr data-group="flights" data-key="flight-kul-pen"><td data-label="城市 / 航段">吉隆坡 → 槟城</td><td data-label="费用项目">国内机票</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="3"/></td><td class="unit" data-label="单位">人</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="n
