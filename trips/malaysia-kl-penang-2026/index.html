@@ -1,6 +1,17 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#103b36"><title>正在载入行程…</title><style>body{margin:0;display:grid;place-items:center;min-height:100vh;background:#0b2c29;color:#fff;font-family:"PingFang SC","Microsoft YaHei",sans-serif}.box{text-align:center;padding:30px}.dot{width:36px;height:36px;border:3px solid rgba(255,255,255,.25);border-top-color:#d8b56f;border-radius:50%;margin:0 auto 18px;animation:s 1s linear infinite}@keyframes s{to{transform:rotate(360deg)}}p{color:rgba(255,255,255,.7);font-size:13px}</style></head><body><div class="box"><div class="dot"></div><strong>正在载入旅行行程</strong><p>首次打开需要加载页面图片，请稍候。</p></div><script>
-const pageParts=["parts/page-01.txt", "parts/page-02.txt", "parts/page-03.txt"];
-const imageDataParts=["image-data/images-01.txt", "image-data/images-02.txt", "image-data/images-03.txt", "image-data/images-04.txt", "image-data/images-05.txt", "image-data/images-06.txt", "image-data/images-07.txt", "image-data/images-08.txt", "image-data/images-09.txt", "image-data/images-10.txt", "image-data/images-11.txt", "image-data/images-12.txt"];
+const pageParts=["parts/page-01.txt","parts/page-02.txt","parts/page-03.txt"];
+const imageMap={
+"__IMG_01__":"https://commons.wikimedia.org/wiki/Special:FilePath/Petronas%20Panorama%20II.jpg",
+"__IMG_02__":"https://commons.wikimedia.org/wiki/Special:FilePath/Petronas%20Towers%20at%20Night%20-%20from%20the%20base%20upwards.jpg",
+"__IMG_03__":"https://commons.wikimedia.org/wiki/Special:FilePath/Mosque%20Jamek.jpg",
+"__IMG_04__":"https://images.openai.com/static-rsc-4/OjW2t0xAMncHP5WRaLJTvUyBgrSOIeOIff0Cfy7CnmJ6uxHC92EsW7GD9nkokJiYUctpnzvRammALzms4NJll6DXr6i3AdtwjQlhJ03PkzQBOlUVwNEgEKryYYWvc-a6iB9-KrC5tx1M71fiRn4dMuy0vE7cWeqikD1RpAdroLg?purpose=inline",
+"__IMG_05__":"https://commons.wikimedia.org/wiki/Special:FilePath/KekLokSi%20Pano%202015.jpg",
+"__IMG_06__":"https://commons.wikimedia.org/wiki/Special:FilePath/Batu%20Ferringhi%20Sunset.jpg",
+"__IMG_07__":"https://commons.wikimedia.org/wiki/Special:FilePath/Lim%20Jetty.jpg",
+"__IMG_08__":"https://commons.wikimedia.org/wiki/Special:FilePath/Merdeka%20Square%20Kuala%20Lumpur.jpg",
+"__IMG_09__":"https://commons.wikimedia.org/wiki/Special:FilePath/Khoo%20Kongsi%20(I).jpg",
+"__IMG_10__":"https://commons.wikimedia.org/wiki/Special:FilePath/Penang%20Hill%20View.jpg",
+"__IMG_11__":"https://commons.wikimedia.org/wiki/Special:FilePath/Pinang%20Peranakan%20Mansion%20(I).jpg"};
 async function getText(urls){const r=await Promise.all(urls.map(u=>fetch(u).then(x=>{if(!x.ok)throw new Error(u);return x.text()})));return r.join('')}
-(async()=>{try{let html=await getText(pageParts);const raw=await getText(imageDataParts);const re=/@@(\d{2})@@\s*([\s\S]*?)(?=@@\d{2}@@|$)/g;let m;while((m=re.exec(raw))){const key='__IMG_'+m[1]+'__';const data=m[2].replace(/\s+/g,'');html=html.split(key).join('data:image/webp;base64,'+data)}document.open();document.write(html);document.close();}catch(e){document.body.innerHTML='<div class="box"><strong>页面加载失败</strong><p>请刷新页面或检查网络连接。</p></div>';console.error(e)}})();
+(async()=>{try{let html=await getText(pageParts);for(const [key,url] of Object.entries(imageMap))html=html.split(key).join(url);document.open();document.write(html);document.close();}catch(e){document.body.innerHTML='<div class="box"><strong>页面加载失败</strong><p>请刷新页面或检查网络连接。</p></div>';console.error(e)}})();
 </script></body></html>
