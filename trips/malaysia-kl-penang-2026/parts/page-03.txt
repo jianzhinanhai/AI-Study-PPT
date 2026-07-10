@@ -1,0 +1,95 @@
+umber" value="350"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="直飞，含共享托运行李"/></td></tr>
+<tr data-group="flights" data-key="flight-pen-bjs"><td data-label="城市 / 航段">槟城 → 北京</td><td data-label="费用项目">联程机票</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="3"/></td><td class="unit" data-label="单位">人</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="2850"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="经曼谷联程，行李直挂"/></td></tr>
+<tr class="group-row"><td colspan="5">吉隆坡｜2晚</td><td class="group-total" id="subtotal-kl">¥0</td><td></td></tr>
+<tr data-group="kl" data-key="kl-hotel"><td data-label="城市 / 航段">吉隆坡</td><td data-label="费用项目">酒店</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="2"/></td><td class="unit" data-label="单位">晚</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="950"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="家庭房 / 双床加床"/></td></tr>
+<tr data-group="kl" data-key="kl-car"><td data-label="城市 / 航段">吉隆坡</td><td data-label="费用项目">包车及接送机</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="1"/></td><td class="unit" data-label="单位">项</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="1350"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="深夜接机＋市内包车＋送机"/></td></tr>
+<tr data-group="kl" data-key="kl-food"><td data-label="城市 / 航段">吉隆坡</td><td data-label="费用项目">餐饮</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="1"/></td><td class="unit" data-label="单位">项</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="1000"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="三人正餐、小吃和饮品"/></td></tr>
+<tr data-group="kl" data-key="kl-ticket"><td data-label="城市 / 航段">吉隆坡</td><td data-label="费用项目">门票</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="1"/></td><td class="unit" data-label="单位">项</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="450"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="博物馆 / 观景台可选"/></td></tr>
+<tr data-group="kl" data-key="kl-shopping"><td data-label="城市 / 航段">吉隆坡</td><td data-label="费用项目">购物</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="1"/></td><td class="unit" data-label="单位">项</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="800"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="常规伴手礼，不含大额消费"/></td></tr>
+<tr class="group-row"><td colspan="5">槟城｜3晚</td><td class="group-total" id="subtotal-penang">¥0</td><td></td></tr>
+<tr data-group="penang" data-key="penang-hotel"><td data-label="城市 / 航段">槟城</td><td data-label="费用项目">酒店</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="3"/></td><td class="unit" data-label="单位">晚</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="800"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="乔治市中档家庭房"/></td></tr>
+<tr data-group="penang" data-key="penang-car"><td data-label="城市 / 航段">槟城</td><td data-label="费用项目">包车及接送机</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="1"/></td><td class="unit" data-label="单位">项</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="1600"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="接机半日＋全天包车＋送机"/></td></tr>
+<tr data-group="penang" data-key="penang-food"><td data-label="城市 / 航段">槟城</td><td data-label="费用项目">餐饮</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="1"/></td><td class="unit" data-label="单位">项</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="2000"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="约2.5个有效游玩日"/></td></tr>
+<tr data-group="penang" data-key="penang-ticket"><td data-label="城市 / 航段">槟城</td><td data-label="费用项目">门票</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="1"/></td><td class="unit" data-label="单位">项</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="700"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="升旗山、宅邸、导览等"/></td></tr>
+<tr data-group="penang" data-key="penang-shopping"><td data-label="城市 / 航段">槟城</td><td data-label="费用项目">购物</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="1"/></td><td class="unit" data-label="单位">项</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="800"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="糕点、豆蔻制品、文创"/></td></tr>
+<tr class="group-row"><td colspan="5">其他</td><td class="group-total" id="subtotal-other">¥0</td><td></td></tr>
+<tr data-group="other" data-key="other-misc"><td data-label="城市 / 航段">全程</td><td data-label="费用项目">保险 / eSIM / 旅游税 / 应急</td><td data-label="数量"><input class="budget-input qty" min="0" step="1" type="number" value="1"/></td><td class="unit" data-label="单位">项</td><td data-label="单价"><input class="budget-input price" min="0" step="1" type="number" value="700"/></td><td class="row-total" data-label="小计">¥0</td><td data-label="备注"><input class="budget-note" value="可按实际继续拆分"/></td></tr>
+</tbody>
+</table>
+</div>
+<div class="calc-summary">
+<div class="calc-kpi"><span>机票小计</span><b id="kpi-flights">¥0</b></div>
+<div class="calc-kpi"><span>吉隆坡小计</span><b id="kpi-kl">¥0</b></div>
+<div class="calc-kpi"><span>槟城小计</span><b id="kpi-penang">¥0</b></div>
+<div class="calc-kpi"><span>其他小计</span><b id="kpi-other">¥0</b></div>
+</div>
+<div class="calc-total"><div><div style="font-size:20px;font-weight:700">一家三口预算总计</div><span>按当前填写数据实时计算；输入内容自动保存在本浏览器。</span></div><strong id="budget-grand-total">¥0</strong></div>
+<div class="calc-foot"><span>若只想录入整项金额，可将数量设为1，直接填写该项总价。</span><span class="saved-tip" id="budget-save-status">已启用自动保存</span></div>
+</div><div class="assumptions">
+<div class="assumption"><b>参考区间来源</b>基于中档酒店、关键段包车和常规家庭消费的初步估算，不作为固定预算。</div>
+<div class="assumption"><b>包车价格口径</b>参考携程公开产品起价，并为暑期、中文司机、5座车和超时风险上浮。</div>
+<div class="assumption"><b>儿童计价</b>13岁在多数机票、酒店加床和部分门票中接近成人计价。</div>
+<div class="assumption"><b>购物边界</b>仅按常规伴手礼估算；奢侈品或大额消费不在预算内。</div>
+</div>
+</div>
+</section>
+<section class="section" id="notes">
+<div class="wrap">
+<div class="section-head">
+<div><div class="kicker">Booking Priorities</div><h2>下单前必须锁定的五件事</h2></div>
+<p class="section-intro">本方案的可行性主要取决于返程联程票、凌晨入住和行李规则，而不是景点门票。优先级不能颠倒。</p>
+</div>
+<div class="checklist">
+<div class="check"><h3>01｜先锁返程联程票</h3><p>PEN—BKK—PEK必须同一订单、同一票号，并在出票前明确行李直挂及中转保障。</p></div>
+<div class="check"><h3>02｜7月26日酒店必须订房</h3><p>虽然7月27日凌晨才到店，但房晚应从7月26日起算，并提前书面告知酒店“late arrival”。</p></div>
+<div class="check"><h3>03｜核实所有托运行李</h3><p>你提供的北京—吉隆坡低价票显示无托运行李；家庭出行至少配置一件共享托运行李更合理。</p></div>
+<div class="check"><h3>04｜槟城酒店优先乔治市</h3><p>三晚都住同一酒店，降低搬运行李；优先选择有电梯、隔音评价稳定、房间面积足够的房型。</p></div>
+<div class="check"><h3>05｜雨天保留替代方案</h3><p>升旗山和海边日落受天气影响较大；可与侨生博物馆、蓝屋、商场和咖啡馆互换日期。</p></div>
+<div class="check"><h3>06｜MDAC与证件</h3><p>按出发时有效规定完成马来西亚电子入境申报，保存回程机票、酒店订单和联程票确认页。</p></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<h4>规划与价格说明</h4>
+<p>本页面为2026年7月家庭旅行方案的初步产品手册，不构成机票、酒店、包车或景区的最终报价与承诺。</p>
+<p>航班计划、价格、行李政策、开放时间及入境规定可能调整，均应以航空公司、携程订单页、酒店及景区官方信息为准。</p>
+</div>
+<div>
+<h4>图片版权与署名</h4>
+<div class="credits"><div>Petronas Panorama II — Someformofhuman / Wikimedia Commons（封面）</div><div>Petronas Towers at Night — Dcubillas / CC BY-SA 3.0 / Wikimedia Featured Picture</div><div>Merdeka Square — Khairil Yusof / CC BY 2.0</div><div>Masjid Jamek Panorama — Ariyanto / CC BY-SA 4.0</div><div>Little Children on a Bicycle — Azreey / CC BY-SA 3.0</div><div>Khoo Kongsi (I) — Supanut Arunoprayote / CC BY 4.0 / Wikimedia Quality Image</div><div>Lim Jetty — HundenvonPenang / CC BY-SA 4.0</div><div>Penang Hill View — Adam Jones / CC BY-SA 2.0</div><div>Kek Lok Si Panorama — KQuhen / CC BY-SA 4.0</div><div>Pinang Peranakan Mansion (I) — Supanut Arunoprayote / CC BY 4.0 / Wikimedia Quality Image</div><div>Batu Ferringhi Sunset — Eduap / CC BY-SA 3.0</div></div>
+</div>
+</div>
+<div class="source-note">DESIGN EDITION V4 · 2026.07 · 已删除重复的静态预算表，仅保留参考预算提示及可编辑测算器；实际总计由手动录入数据实时生成。</div>
+</div>
+</footer>
+<button aria-label="回到顶部" class="backtop" onclick="location.href='#top'">↑</button>
+<script>
+(function(){
+  const STORAGE_KEY='malaysia_family_trip_budget_v3';
+  const formatter=new Intl.NumberFormat('zh-CN',{style:'currency',currency:'CNY',maximumFractionDigits:0});
+  const suggested={
+    'flight-bjs-kul':[3,3300,'含税及基础行李预留'],'flight-kul-pen':[3,350,'直飞，含共享托运行李'],'flight-pen-bjs':[3,2850,'经曼谷联程，行李直挂'],
+    'kl-hotel':[2,950,'家庭房 / 双床加床'],'kl-car':[1,1350,'深夜接机＋市内包车＋送机'],'kl-food':[1,1000,'三人正餐、小吃和饮品'],'kl-ticket':[1,450,'博物馆 / 观景台可选'],'kl-shopping':[1,800,'常规伴手礼，不含大额消费'],
+    'penang-hotel':[3,800,'乔治市中档家庭房'],'penang-car':[1,1600,'接机半日＋全天包车＋送机'],'penang-food':[1,2000,'约2.5个有效游玩日'],'penang-ticket':[1,700,'升旗山、宅邸、导览等'],'penang-shopping':[1,800,'糕点、豆蔻制品、文创'],'other-misc':[1,700,'可按实际继续拆分']};
+  const n=v=>{const x=parseFloat(v);return Number.isFinite(x)?x:0};
+  const rows=()=>Array.from(document.querySelectorAll('#budget-calculator tr[data-group]'));
+  function calculate(save=true){
+    const totals={flights:0,kl:0,penang:0,other:0},state={};
+    rows().forEach(row=>{const qty=row.querySelector('.qty'),price=row.querySelector('.price'),note=row.querySelector('.budget-note');const amount=n(qty.value)*n(price.value);row.querySelector('.row-total').textContent=formatter.format(amount);totals[row.dataset.group]+=amount;state[row.dataset.key]={qty:qty.value,price:price.value,note:note.value};});
+    ['flights','kl','penang','other'].forEach(g=>{const s=document.getElementById('subtotal-'+g),k=document.getElementById('kpi-'+g);if(s)s.textContent=formatter.format(totals[g]);if(k)k.textContent=formatter.format(totals[g]);});
+    const grand=Object.values(totals).reduce((a,b)=>a+b,0);document.getElementById('budget-grand-total').textContent=formatter.format(grand);
+    if(save){localStorage.setItem(STORAGE_KEY,JSON.stringify(state));document.getElementById('budget-save-status').textContent='已自动保存 '+new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'});}return{totals,grand,state};
+  }
+  function applyData(data){rows().forEach(row=>{const d=data[row.dataset.key];if(!d)return;row.querySelector('.qty').value=d.qty??d[0]??0;row.querySelector('.price').value=d.price??d[1]??0;row.querySelector('.budget-note').value=d.note??d[2]??'';});calculate();}
+  window.loadSuggestedBudget=()=>applyData(suggested);
+  window.clearBudget=function(){if(!confirm('确定清空所有数量和单价吗？备注将保留。'))return;rows().forEach(row=>{row.querySelector('.qty').value='';row.querySelector('.price').value='';});calculate();};
+  window.copyBudgetSummary=async function(){const{totals,grand}=calculate(false);const lines=['马来西亚双城家庭之旅｜预算汇总','机票：'+formatter.format(totals.flights),'吉隆坡：'+formatter.format(totals.kl),'槟城：'+formatter.format(totals.penang),'其他：'+formatter.format(totals.other),'总计：'+formatter.format(grand)];try{await navigator.clipboard.writeText(lines.join('\n'));document.getElementById('budget-save-status').textContent='预算汇总已复制';}catch(e){alert(lines.join('\n'));}};
+  document.addEventListener('input',e=>{if(e.target.closest('#budget-calculator'))calculate();});
+  try{const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');if(saved)applyData(saved);else calculate(false);}catch(e){calculate(false);}
+})();
+</script></body>
+</html>
